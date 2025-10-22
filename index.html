@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gaïa Collective — From Gaia we rise</title>
+  <meta name="description" content="Association pour la protection du vivant, la transparence et la justice climatique par des actions légales et non-violentes." />
+
+  <!-- Favicons / App Icons -->
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0b0f0d">
+
+  <!-- SEO -->
+  <link rel="canonical" href="https://votre-domaine.org/">
+  <meta name="robots" content="index,follow">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gaïa Collective — From Gaia we rise">
+  <meta property="og:description" content="Association pour la protection du vivant, la transparence et la justice climatique par des actions légales et non-violentes.">
+  <meta property="og:image" content="android-chrome-512x512.png">
+  <meta property="og:url" content="https://votre-domaine.org/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gaïa Collective — From Gaia we rise">
+  <meta name="twitter:description" content="Actions légales, non-violentes et ouvertes pour protéger le vivant.">
+  <meta name="twitter:image" content="android-chrome-512x512.png">
+
+  <!-- Favicon fallback emoji (optionnel) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+
+  <style>
+    :root{
+      --bg:#0b0f0d;
+      --card:#111714;
+      --muted:#9fb7a5;
+      --text:#eaf5ec;
+      --accent:#3fe086;
+      --accent-2:#1fbf71;
+      --ring: 0 0 0 3px rgba(63,224,134,.25);
+      --radius: 18px;
+      --maxw: 1080px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:linear-gradient(180deg,#0b0f0d 0%,#0e1713 100%);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{color:var(--accent-2)}
+    .container{max-width:var(--maxw);margin-inline:auto;padding:28px}
+    header{position:sticky;top:0;background:rgba(11,15,13,.7);backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid #1a231f;z-index:50}
+    nav{display:flex;align-items:center;gap:18px;justify-content:space-between}
+    nav .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+    nav .brand span{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:10px;background:radial-gradient(75% 75% at 30% 30%,var(--accent) 0%,#1a8b55 100%)}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:16px;flex-wrap:wrap}
+    nav a.btn{padding:.55rem .9rem;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#03150c;font-weight:700}
+    nav a.btn:hover{filter:brightness(1.08)}
+    .hero{padding:70px 0}
+    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+    .card{background:var(--card);border:1px solid #1b261f;border-radius:var(--radius);padding:26px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+    .eyebrow{letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+    h1{font-size: clamp(32px, 4vw, 54px); line-height:1.1; margin:.3em 0 .2em}
+    .lead{font-size: clamp(16px, 2.2vw, 20px); color:#cfe5d7}
+    .grid{display:grid;gap:22px}
+    .grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+    section{padding:36px 0}
+    h2{font-size: clamp(22px, 3vw, 32px);margin:.2em 0 .6em}
+    .badge{display:inline-block;padding:.35rem .6rem;border-radius:999px;background:#14201a;border:1px solid #213229;color:#cfe5d7;font-weight:600;font-size:.8rem}
+    ul.clean{margin:0;padding-left:1.2rem}
+    ul.clean li{margin:.4rem 0}
+    blockquote{margin:0;padding:18px 20px;border-left:4px solid var(--accent);background:#0f1814;border-radius:12px}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#0c1411;border:1px solid #1f2a25;border-radius:8px;padding:.15rem .35rem}
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid #1e2a25;background:#0f1714;border-radius:999px;padding:.4rem .75rem;color:#cfe5d7}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .cta a{border:1px solid #1e2a25;background:#0f1714;border-radius:999px;padding:.6rem .9rem}
+    .cta a.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#052615;font-weight:800}
+    .cta a:focus-visible{outline:none;box-shadow:var(--ring)}
+    footer{padding:30px 0;border-top:1px solid #1a231f;color:#a8c0b0}
+    @media (max-width:900px){.hero .wrap,.grid.two{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Navigation principale">
+        <div class="brand">
+          <span aria-hidden="true">🌱</span>
+          <div>Gaïa Collective</div>
+        </div>
+        <ul>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#charte">Charte</a></li>
+          <li><a href="#communique">Communiqué</a></li>
+          <li><a href="#contact" class="btn">Nous rejoindre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="wrap">
+          <div class="card">
+            <div class="eyebrow">From Gaia we rise</div>
+            <h1>Protéger le vivant, agir avec éthique</h1>
+            <p class="lead">
+              Fils et filles de la Terre. Nous défendons la biodiversité, la justice climatique et la transparence — par des actions <strong>légales, non-violentes</strong> et ouvertes.
+            </p>
+            <div class="cta">
+              <a class="primary" href="#contact">Agir avec nous</a>
+              <a href="#charte">Lire notre charte</a>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="card">
+              <span class="badge">Origine &amp; valeurs</span>
+              <p>
+                Nourris par l’urgence écologique, nous refusons l’inaction et les compromissions. Nous promouvons l’éducation, la réduction des risques, la transparence des impacts et la responsabilité environnementale.
+              </p>
+            </div>
+            <div class="card">
+              <span class="badge">Notre approche</span>
+              <p>
+                Enquêtes citoyennes, plaidoyer, soutien aux lanceurs d’alerte, audits d’empreinte carbone, campagnes de sensibilisation. Zéro violence, zéro dégradation : nous œuvrons dans le cadre du droit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mission">
+      <div class="container grid two">
+        <div class="card">
+          <h2>Mission</h2>
+          <ul class="clean">
+            <li>Mobiliser pour une transition juste et rapide.</li>
+            <li>Rendre lisibles les externalités et responsabilités.</li>
+            <li>Soutenir les alternatives concrètes et locales.</li>
+            <li>Protéger les sources et données sensibles de manière éthique.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h2>Engagements</h2>
+          <ul class="clean">
+            <li><strong>Non-violence &amp; légalité</strong> comme principes cardinaux.</li>
+            <li><strong>Transparence</strong> sur nos méthodes et nos financements.</li>
+            <li><strong>Respect des personnes</strong> et des communautés impactées.</li>
+            <li><strong>Sécurité numérique responsable</strong> : pas d’intrusion, pas de sabotage.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="charte">
+      <div class="container">
+        <div class="card">
+          <h2>Charte éthique</h2>
+          <blockquote>
+            Nos actions soutiennent la vie. Nous dénonçons les atteintes au vivant par la recherche, la pédagogie, la veille et le plaidoyer. Nous refusons toute forme de violence, d’intimidation ou de destruction.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="communique">
+      <div class="container">
+        <div class="card">
+          <h2>Communiqué</h2>
+          <p>
+            Aujourd’hui, nous éclairons des faits d’intérêt public trop souvent dissimulés : rapports d’impact, clauses environnementales, trajectoires d’émissions.
+            Notre promesse : <strong>informer</strong>, <strong>documenter</strong>, <strong>agir légalement</strong> et <strong>protéger le vivant</strong>.
+          </p>
+          <p class="pill" role="note" aria-label="Identifiant">
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container grid two">
+        <div class="card">
+          <h2>Nous contacter</h2>
+          <p>Envie de contribuer ? Écris-nous, propose un projet, ou demande un audit environnemental participatif.</p>
+          <ul class="clean">
+            <li>📧 contact@votre-domaine.org</li>
+            <li>🕊️ @GaiaCollective</li>
+            <li>📍 Partout où la Terre a besoin de nous</li>
+          </ul>
+          <div class="cta">
+            <a class="primary" href="mailto:contact@votre-domaine.org">Envoyer un email</a>
+            <a href="#">Télécharger le kit bénévole</a>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Soutenir</h2>
+          <p>Vos dons et votre temps financent la recherche, les ateliers, et la médiation scientifique.</p>
+          <div class="cta">
+            <a class="primary" href="#">Faire un don</a>
+            <a href="#">Devenir bénévole</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ressources">
+      <div class="container">
+        <div class="card">
+          <h2>Ressources externes</h2>
+	      
+          <ul class="clean">
+
+	<!--
+		<li>
+		  <a href="https://gist.github.com/sylphgaia/66446e1fb7629b9ec0236a1c5576f5c0">https://gist.github.com/sylphgaia/66446e1fb7629b9ec0236a1c5576f5c0</a>
+		  </li>
+		  <li>
+		    <a href="https://pastebin.com/nd91kdAr">https://pastebin.com/nd91kdAr</a>
+		    </li>
+	-->
+
+	    <li>
+  📄 		<a href="Rapport_GIEC_OCE.pdf" target="_blank" rel="noopener">
+   			 Rapport GIEC (Résumé pour enseignants, AR6)
+  		</a>
+	    </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="y"></span> Gaïa Collective — Tous droits réservés.
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
